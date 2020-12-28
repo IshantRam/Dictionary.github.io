@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/1973/1973739.svg" type="image/icon type"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1d6a9c959f.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    <title>Dictionary</title>
+</head>
+<body>
+          <!--NavBar Start-->
+  <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://www.flaticon.com/svg/static/icons/svg/1973/1973739.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+        Dictionary
+      </a>
+  </nav>
+          <!--NavBar End-->
+
+          <!--Input Box-->
+  <div class="input-group mb-3">
+      <input name="searchBox" id="searchBox" type="search" class="form-control" placeholder="Search for a Word" aria-label="Search for a Word" aria-describedby="basic-addon2" autocomplete="off"/>
+      <span class="hide" id="output"></span>
+      <button class="input-group-text input-group-append" id="basic-addon2" name="submit" value="submit" type="button" spellcheck="false" onclick="SToT()"><i class="fas fa-microphone"></i></button>
+      <button class="input-group-text input-group-append" id="basic-addon2" name="submit" value="submit" type="button" spellcheck="false" onclick="OutPut()"><i class="fas fa-search"></i></button>
+  </div>
+          <!--Input Box End-->
+
+          <!--Output Box Start-->
+  <div id="searchResult">
+      <div>
+        <h1>Word</h1>
+        <p id="word" class="text-justify"></p>
+        <p id="verb" class="text-justify"></p>
+      </div>
+      <div>
+        <h1>Definition</h1>
+        <p id="definition" class="text-justify"></p>
+      </div>
+      <div>
+          <h1>Synonyms</h1>
+          <p id="synonyms" class="text-justify"></p>
+      </div>
+      <div>
+        <h1>Example</h1>
+        <p id="example" class="text-justify"></p>
+      </div>
+      <div>
+        <h1>How To Spell?</h1>
+        <p id="spell" class="text-justify"></p>
+      </div>
+      <button type="button" class="btn btn-light" onclick="MoreData()">SeeMore<i class="fas fa-arrow-down"></i></button>
+  </div>
+        <!--Output Box End-->
+  <hr>
+        <!--ShowMore Output Start-->
+  <div id="SeeMore">
+    <div>
+      <p id="rb" class="text-justify"></p>
+    </div>
+    <div>
+      <h1>Definition</h1>
+      <p id="finition" class="text-justify"></p>
+    </div>
+    <div>
+      <h1>Example</h1>
+      <p id="ample" class="text-justify"></p>
+    </div>
+        
+    <hr>
+
+    <div>
+      <p id="erb" class="text-justify"></p>
+    </div>
+    <div>
+      <h1>Definition</h1>
+      <p id="efinition" class="text-justify"></p>
+    </div>
+    <div>
+      <h1>Synonyms</h1>
+      <p id="ynonyms" class="text-justify"></p>
+    </div>
+    <div>
+      <h1>Example</h1>
+      <p id="xample" class="text-justify"></p>
+    </div>
+
+  </div>
+            <!--ShowMore Output End-->
+</body>
+</html>
