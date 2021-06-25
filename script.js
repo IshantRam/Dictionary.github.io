@@ -24,12 +24,9 @@ const OutPut = async () => {
     example.innerHTML = JsonRes[0].meanings[0].definitions[0].example;
 
     // Audio OutPut
-    const audio = document.createElement("AUDIO");
-    audio.setAttribute("src", JsonRes[0].phonetics[0].audio);
-    audio.setAttribute("controls", "controls");
-    audio.setAttribute("autoplay", "autoplay");
-    audio.setAttribute("id", "awd");
-    spell.appendChild(audio);
+    spell.setAttribute("src", JsonRes[0].phonetics[0].audio);
+    spell.setAttribute("controls", "controls");
+    spell.setAttribute("autoplay", "autoplay");
   } else {
     word.innerHTML = "The Word You are Looking is Not Found.";
     verb.innerHTML = "The Word You are Looking is Not Found.";
@@ -48,7 +45,6 @@ const MoreData = async () => {
   const efinition = document.getElementById("finition");
   const synonyms = document.getElementById("ynonyms");
   const example = document.getElementById("xample");
-  const xample = document.getElementById("ample");
 
   const wordToSearch = document.getElementById("searchBox").value;
 
@@ -66,7 +62,6 @@ const MoreData = async () => {
   const JsonRes2 = await response2.json();
 
   efinition.innerHTML = JsonRes2[1].text;
-  xample.innerHTML = JsonRes2[1].exampleUses[0].text;
 };
 //Speech TO Text Conversion
 function SToT() {
