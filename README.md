@@ -4,9 +4,9 @@ This is a fun project done with my friend to gift a dictionary to our Mam becaus
 
 # API
 
-- (Frist API)We are using a unofficial google API so that we can get same result as Google.
-- (Second API)As a second API I am using WordNik API.
+- [Dictionary API](https://dictionaryapi.dev/)
+- [Wordnik API](https://wordnik.com)
 
 # Use The Dictionary
 
-The website is also hosted on github if you want to see that out then ->[ClickHere](https://ishantsram.github.io/Dictionary.github.io/)
+The website is also hosted on github if you want to use it 🡒 [Dictionary](https://ishantsram.github.io/Dictionary.github.io/)
