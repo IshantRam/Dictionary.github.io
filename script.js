@@ -63,7 +63,8 @@ const MoreData = async () => {
 
   efinition.innerHTML = JsonRes2[1].text;
 };
-//Speech TO Text Conversion
+
+// Speech TO Text Conversion
 function SToT() {
   var output = document.getElementById("output");
   const Inp = document.getElementById("searchBox");
