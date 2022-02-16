@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="icon" href="https://img-premium.flaticon.com/png/512/3145/premium/3145765.png?token=exp=1631594717~hmac=39cb8dc8aa750b95b8f3d23a67c863c6" type="image/icon type"/>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1973/1973739.png" type="image/icon type"/>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1d6a9c959f.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
@@ -21,19 +21,18 @@
           <!--NavBar Start-->
   <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="index.html">
-        <img src="https://img-premium.flaticon.com/png/512/3145/premium/3145765.png?token=exp=1631594717~hmac=39cb8dc8aa750b95b8f3d23a67c863c6" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="https://cdn-icons-png.flaticon.com/512/1973/1973739.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Dictionary
       </a>
   </nav>
           <!--NavBar End-->
 
           <!--Input Box-->
-  <div class="input-group mb-3">
+ <form class="input-group mb-3" id="idc" >
       <input name="searchBox" id="searchBox" type="search" class="form-control" placeholder="Search for a Word" aria-label="Search for a Word" aria-describedby="basic-addon2" autocomplete="off"/>
       <span class="hide" id="output"></span>
-      <button class="input-group-text input-group-append" id="basic-addon2" name="submit" value="submit" type="button" spellcheck="false" onclick="SToT()"><i class="fas fa-microphone"></i></button>
-      <button class="input-group-text input-group-append" id="basic-addon2" name="submit" value="submit" type="button" spellcheck="false" onclick="OutPut()"><i class="fas fa-search"></i></button>
-  </div>
+      <button class="input-group-text input-group-append" id="basic-addon2" type="button" spellcheck="false" onclick="SToT()"><i class="fas fa-microphone"></i></button>
+  </form>
           <!--Input Box End-->
 
           <!--Output Box Start-->

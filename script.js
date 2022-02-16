@@ -1,4 +1,5 @@
-const OutPut = async () => {
+document.getElementById("idc").addEventListener("submit", async (event) => {
+  event.preventDefault();
   document.getElementById("searchResult").style.visibility = "visible";
   document.getElementById("SeeMore").style.visibility = "hidden";
 
@@ -35,7 +36,7 @@ const OutPut = async () => {
     example.innerHTML = "The example You are Looking is Not Found";
     document.getElementById("SeeMore").style.visibility = "hidden";
   }
-};
+});
 
 const MoreData = async () => {
   document.getElementById("SeeMore").style.visibility = "visible";
